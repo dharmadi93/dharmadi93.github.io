@@ -2,12 +2,32 @@ html {
     font-family: "Times New Roman", Times, serif;
 }
 
+@keyframes animabout {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
 h1,h2,h3,h4,h5,h6 {
     text-align: center;
 }
 
 #about {
     background-color: #f1c40f;
+    -webkit-animation-name: animabout; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: animabout;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#about h1 {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
 }
 
 
@@ -15,9 +35,27 @@ h1,h2,h3,h4,h5,h6 {
     background-color: #ecf0f1;
 }
 
+#form h2 {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
 
 #profile {
     background-color: #3498db;
+}
+
+#profile img {
+    -webkit-transform: skewX(5deg);
+    -moz-transform: skewX(5deg);
+    -ms-transform: skewX(5deg);
+    -o-transform: skewX(5deg);
+    transform: skewX(5deg);
+
+
 }
 
 #profile table {
@@ -28,7 +66,34 @@ h1,h2,h3,h4,h5,h6 {
     background-color: #e74c3c;
 }
 
+#ol h4 {
+    -webkit-transform: translate(20px);
+    -moz-transform: translate(20px);
+    -ms-transform: translate(20px);
+    -o-transform: translate(20px);
+    transform: translate(20px);
+}
+
 
 #ul {
     background-color: #1abc9c;
+    transform: perspective(200px) rotateX(2deg);
 }
+
+img {
+    width: 100px;
+    height: 100px;;
+    -webkit-transition: width 2s, height 2s;
+    -moz-transition: width 2s, height 2s;
+    -ms-transition: width 2s, height 2s;
+    -o-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+}
+img:hover {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
