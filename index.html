@@ -3,81 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <title>week 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tugas hacktiv8 minggu pertama">
+    <meta name="keywords" content="dharmadi, tanamas, tugas, week1">
+    <meta name="author" content="dharmadi93">
 
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" type="text/css" href="styles/index.css">
 </head>
 <body>
 
-<div id="about">
-    <h1>Dharmadi Tanamas</h1>
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Home</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#list">List</a></li>
+                    <li><a href="#transform">Transform</a></li>
+                    <li><a href="#form">Form</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 
-    <p>
-        Halo semuanya, nama saya <span class="nama">Dharmadi Tanamas</span>, panggil saja <i>Dharmadi</i>.<br>
-        Saya bergabung di <a href="https://hacktiv8.com/" target="_self">Hacktiv8</a> untuk mendalami skill programing saya dalam web developer terutama dalam node js.
-        Developer idola saya adalah <b>mark zuckerberg</b> pembuat facebook yang dapat mempermudah setiap orang untuk saling berinteraksi.
-        Untuk mengenal saya lebih lanjut, kunjungi <a href="http://www.facebook.com" target="_blank">facebook</a> saya https://www.facebook.com/Dharmadi93 Terima kasih!
-    </p>
+<!-- Home Start -->
+<div id="home" class="container-fluid text-center">
+    <div class="home-text">
+        <h1>Dharmadi Tanamas</h1>
+        <p>
+            Halo semuanya, nama saya <span class="nama">Dharmadi Tanamas</span>, panggil saja <i>Dharmadi</i>.<br>
+            Saya bergabung di <a href="https://hacktiv8.com/" target="_self">Hacktiv8</a> untuk mendalami skill programing saya dalam web developer terutama dalam node js.
+            Developer idola saya adalah <b>mark zuckerberg</b> pembuat facebook yang dapat mempermudah setiap orang untuk saling berinteraksi.
+            Untuk mengenal saya lebih lanjut, kunjungi <a href="http://www.facebook.com" target="_blank">facebook</a> saya https://www.facebook.com/Dharmadi93 Terima kasih!
+        </p>
+    </div>
 </div>
-<hr>
-<!-- form -->
-<div id="form">
-    <h2>Form</h2>
-    <form>
-        <label for="full-name">Full Name</label>
-        <input name="full-name" type="text">
+<!-- Home End -->
 
-        <label for="email">Email Address</label>
-        <input name="email" type="email">
+<!-- About Start -->
+<div id="about" class="container-fluid text-center">
+    <h1>Data Pribadi</h1>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h6>Hover untuk memperbesar</h6>
+            <a href="images/BinusianPhotoHandler%20(1).jpeg">
+                <img border="0" src="images/BinusianPhotoHandler%20(1).jpeg" alt="photoid">
+            </a>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <table>
+                <tr>
+                    <td>Nama :</td>
+                    <td>Dharmadi Tanamas</td>
+                </tr>
+                <tr>
+                    <td>Email :</td>
+                    <td><a href="mailto:dharmadi93@gmail.com" target="_top">dharmadi93@gmail.com</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+<!-- List Start-->
+<div id="list" class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h1 class="text-center">Ordered list</h1>
+            <ol>
+                <li>list 1</li>
+                <li>list 2</li>
+                <li>list 3</li>
+                <li>list 4</li>
+            </ol>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h1 class="text-center">Unordered list</h1>
+            <ul>
+                <li>list 1</li>
+                <li>list 2</li>
+                <li>list 3</li>
+                <li>list 4</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- List End-->
+
+<!-- Transform And Animation Start-->
+<div id="transform" class="container-fluid text-center">
+    <h1>Transform & Animation</h1>
+    <div class="row">
+        <div class="col-sm-12">
+            <table class="table table-bordered">
+                <tr>
+                    <td>
+                        <h6>Rotate</h6>
+                        <div id="rotate"></div>
+                    </td>
+                    <td>
+                        <h6>Scale</h6>
+                        <div id="scale"></div>
+                    </td>
+                    <td>
+                        <h6>Skew</h6>
+                        <div id="skew"></div>
+                    </td>
+                    <td>
+                        <h6>Translate</h6>
+                        <div id="translate"></div>
+                    </td>
+                    <td>
+                        <h6>Perspective</h6>
+                        <div id="perspective"></div>
+                    </td>
+                    <td>
+                        <h6>Animation</h6>
+                        <div id="animation"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- Transform And Animation End-->
+
+<!-- form  Start-->
+<div id="form" class="container-fluid">
+    <h2 class="text-center">Form</h2>
+    <form class="form-horizontal">
+        <fieldset>
+            <legend>Form</legend>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="username">Username:</label>
+                <div class="col-sm-10">
+                    <input type="email" id="username" class="form-control" placeholder="Enter email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-10">
+                    <input type="email" id="email" class="form-control" placeholder="Enter email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="message">Message:</label>
+                <div class="col-sm-10">
+                    <textarea id="message" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </div>
+        </fieldset>
     </form>
 </div>
-<hr>
-<!-- data pribadi -->
-<div id="profile">
-    <h3>Data Pribadi</h3>
-    <table>
-        <tr>
-            <td>Hover untuk memperbesar</td>
-        </tr>
-        <tr>
-            <td>
-                <a href="images/BinusianPhotoHandler%20(1).jpeg">
-                    <img border="0" src="images/BinusianPhotoHandler%20(1).jpeg" width="100" height="100">
-                </a>
-            </td>
-        </tr>
-        <tr>
-            <td>Nama :</td>
-            <td>Dharmadi Tanamas</td>
-        </tr>
-        <tr>
-            <td>Email :</td>
-            <td><a id="email" href="mailto:dharmadi93@gmail.com" target="_top">dharmadi93@gmail.com</a></td>
-        </tr>
-    </table>
-</div>
-<hr>
-<!-- ordered list -->
-<div id="ol">
-    <h4>Ordered list</h4>
-    <ol>
-        <li>list 1</li>
-        <li>list 2</li>
-        <li>list 3</li>
-        <li>list 4</li>
-    </ol>
-</div>
+<!-- form End-->
 
-<hr>
-<!-- unordered list -->
-<div id="ul">
-    <h5>Unordered list</h5>
-    <ul>
-        <li>list 1</li>
-        <li>list 2</li>
-        <li>list 3</li>
-        <li>list 4</li>
-    </ul>
-</div>
+<footer class="text-center">
+Copyright &copy; dharmadi93
+</footer>
+
 </body>
 </html>

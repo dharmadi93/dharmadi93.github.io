@@ -2,98 +2,105 @@ html {
     font-family: "Times New Roman", Times, serif;
 }
 
-@keyframes animabout {
+@keyframes change-color {
     0%   {background-color: red;}
     25%  {background-color: yellow;}
     50%  {background-color: blue;}
     100% {background-color: green;}
 }
 
-h1,h2,h3,h4,h5,h6 {
-    text-align: center;
+
+#home {
+    height:100vh;
 }
+
+.home-text {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 
 #about {
-    background-color: #f1c40f;
-    -webkit-animation-name: animabout; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-    animation-name: animabout;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
-
-#about h1 {
-    -webkit-transform: rotate(20deg);
-    -moz-transform: rotate(20deg);
-    -ms-transform: rotate(20deg);
-    -o-transform: rotate(20deg);
-    transform: rotate(20deg);
-}
-
-
-#form {
     background-color: #ecf0f1;
-}
-
-#form h2 {
-    -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    -o-transform: scale(1.5);
-    transform: scale(1.5);
-}
-
-
-#profile {
-    background-color: #3498db;
-}
-
-#profile img {
-    -webkit-transform: skewX(5deg);
-    -moz-transform: skewX(5deg);
-    -ms-transform: skewX(5deg);
-    -o-transform: skewX(5deg);
-    transform: skewX(5deg);
-
-
-}
-
-#profile table {
-    margin: auto;
-}
-
-#ol {
-    background-color: #e74c3c;
-}
-
-#ol h4 {
-    -webkit-transform: translate(20px);
-    -moz-transform: translate(20px);
-    -ms-transform: translate(20px);
-    -o-transform: translate(20px);
-    transform: translate(20px);
-}
-
-
-#ul {
-    background-color: #1abc9c;
-    transform: perspective(200px) rotateX(2deg);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 img {
     width: 100px;
-    height: 100px;;
-    -webkit-transition: width 2s, height 2s;
-    -moz-transition: width 2s, height 2s;
-    -ms-transition: width 2s, height 2s;
-    -o-transition: width 2s, height 2s;
+    height: 100px;
     transition: width 2s, height 2s;
 }
+
 img:hover {
     width: 200px;
     height: 200px;
 }
 
+#transform {
+    background-color: #ecf0f1;
+}
+
+#rotate {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    transform: rotate(25deg);
+}
+
+#scale {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    transform: scale(0.5);
+}
+
+#skew {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    transform: skew(5deg);
+}
+
+#translate {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    transform: translateX(10px);
+}
+
+#perspective {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    transform: perspective(100px) rotateX(45deg);
+}
+
+#animation {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    animation-name: change-color;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#form {
+
+}
+
+
+footer {
+    background-color: #34495e;
+    color: white;
+}
 
 
 
