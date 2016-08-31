@@ -96,6 +96,10 @@ img:hover {
 
 }
 
+.spacer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 footer {
     background-color: #34495e;
